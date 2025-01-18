@@ -7,7 +7,7 @@ on:
 
 jobs:
   update-gradle-wrapper:
-    runs-on: ubuntu-latest  # Use ubuntu, windows-latest, or macos-latest depending on your needs
+    runs-on: ubuntu-latest  # You can change this to windows-latest or macos-latest if needed
 
     steps:
       # Checkout the repository
@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '17'
-          distribution: 'adoptopenjdk'  # Use 'adoptium' as the new distribution name
+          distribution: 'adoptium'  # Corrected distribution name
 
       # Update Gradle wrapper to version 7.6
       - name: Update Gradle wrapper to version 7.6
